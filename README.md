@@ -46,13 +46,15 @@ where (a, b) is a known solution.
 
 For d = 2 and (a, b) = (3, 2), the algorithm generates:
 
-| n |  x |  y |
 
-| 0 |  1 |  0 |
-| 1 |  3 |  2 |
-| 2 |  17|  12|
-| 3 |  99|  70|
-| 4 | 577| 408|
+| n | x | y |
+|---|---:|---:|
+| 0 | 1 | 0 |
+| 1 | 3 | 2 |
+| 2 | 17 | 12 |
+| 3 | 99 | 70 |
+| 4 | 577 | 408 |
+
 
 Every generated pair satisfies x² − 2y² = 1.
 
