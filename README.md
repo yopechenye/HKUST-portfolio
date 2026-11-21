@@ -46,7 +46,6 @@ where (a, b) is a known solution.
 
 For d = 2 and (a, b) = (3, 2), the algorithm generates:
 
-
 | n | x | y |
 |---|---:|---:|
 | 0 | 1 | 0 |
@@ -55,29 +54,22 @@ For d = 2 and (a, b) = (3, 2), the algorithm generates:
 | 3 | 99 | 70 |
 | 4 | 577 | 408 |
 
-
 Every generated pair satisfies x² − 2y² = 1.
 
 ## 3. Formally Verified Results
 
 The following theorems are implemented and verified in Lean 4:
 
-
-pell_2_example  Verifies that (3, 2) solves the equation for d = 2 
-
-pell_one_zero  Proves that (1, 0) is a solution for every integer d 
-
-pellMul_correct  Proves closure under multiplication 
-
-pellSeq_correct  Verifies that the recursive generator always produces valid solutions 
-
-pellSeq_positive  Proves bounds on generated coordinates under positivity assumptions 
-
-pellSeq_strictIncrease  Proves strict growth of the first coordinate 
-
-pellSeq_injective  Proves that different indices give different first coordinates 
-
-pell_infinite  Proves the infinitude of integer solutions for d = 2 
+| Theorem | Description |
+|---|---|
+| `pell_2_example` | Verifies that (3, 2) solves the equation for d = 2 |
+| `pell_one_zero` | Proves that (1, 0) is a solution for every integer d |
+| `pellMul_correct` | Proves closure under multiplication |
+| `pellSeq_correct` | Verifies that the recursive generator always produces valid solutions |
+| `pellSeq_positive` | Proves bounds on generated coordinates under positivity assumptions |
+| `pellSeq_strictIncrease` | Proves strict growth of the first coordinate |
+| `pellSeq_injective` | Proves that different indices give different first coordinates |
+| `pell_infinite` | Proves the infinitude of integer solutions for d = 2 |
 
 ### Main Theorem
 
