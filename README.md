@@ -1,13 +1,14 @@
-# HKUST portfolio
+Formal Verification of Pell Equations in Lean 4
+A formal proof of the infinitude of integer solutions to a Pell equation.
 
-## GitHub configuration
+Project overview
 
-To set up your new GitHub repository, follow these steps:
+This project explores the algebraic structure of Pell equation solutions and formally verifies a recursive solution generator using Lean 4 and Mathlib.
 
-* Under your repository name, click **Settings**.
-* In the **Actions** section of the sidebar, click "General".
-* Check the box **Allow GitHub Actions to create and approve pull requests**.
-* Click the **Pages** section of the settings sidebar.
-* In the **Source** dropdown menu, select "GitHub Actions".
-
-After following the steps above, you can remove this section from the README file.
+Main results
+- Closure of Pell solutions under multiplication
+- Correctness of the recursive generator
+- Positivity and strict growth of generated solutions
+- Injectivity of the sequence
+- Infinitely many integer solutions to \(x^2-2y^2=1\)
+Technologies: Lean 4 · Mathlib · Formal Verification · Number Theory
